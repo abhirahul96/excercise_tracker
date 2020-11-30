@@ -22,8 +22,8 @@ connection.once('open', () => {
 
 
 
-app.use(excercisesRouter);
-app.use(usersRouter)
+app.use('/excercises', excercisesRouter);
+app.use('/users', usersRouter)
 
 
 app.listen(port, () => {
